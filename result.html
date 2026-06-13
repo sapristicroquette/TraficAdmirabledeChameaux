@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Résultat</title>
+</head>
+<body>
+<div class="container">
+<h1>Résultat</h1>
+<p id="r"></p>
+<a href="index.html" onclick="localStorage.clear()">Recommencer</a>
+</div>
+
+<script>
+let s = Number(localStorage.getItem("score")) || 0;
+let txt = "";
+
+if(s <= 40) txt="Profil calme";
+else if(s <= 70) txt="Profil équilibré";
+else txt="Profil leader";
+
+document.getElementById("r").innerText = "Score: "+s+" - "+txt;
+</script>
+</body>
+</html>
