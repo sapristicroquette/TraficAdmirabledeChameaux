@@ -1,32 +1,78 @@
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #74ebd5, #9face6);
+  font-family: "Trebuchet MS", sans-serif;
+  background: linear-gradient(
+    180deg,
+    #f9d29d 0%,
+    #e6a756 45%,
+    #c97b30 100%
+  );
   margin: 0;
   min-height: 100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* texture désert */
+  background-attachment: fixed;
 }
 
-.container{
-  background:white;
-  padding:30px;
-  border-radius:15px;
-  width:90%;
-  max-width:500px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.2);
-  text-align:center;
+/* bloc principal */
+.container {
+  background: #fff3d6;
+  padding: 35px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 550px;
+  box-shadow: 0 8px 25px rgba(120, 70, 20, 0.35);
+  text-align: center;
+  border: 4px dashed #b8742f;
+  transform: rotate(-1deg);
 }
 
-button{
-  width:100%;
-  margin:10px 0;
-  padding:12px;
-  border:none;
-  border-radius:10px;
-  background:#4a90e2;
-  color:white;
-  cursor:pointer;
+/* titre */
+h1 {
+  color: #8b4513;
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #f7d7a8;
 }
-button:hover{background:#357abd;}
-a{color:#4a90e2; text-decoration:none; font-weight:bold;}
+
+/* boutons */
+button {
+  width: 100%;
+  margin: 12px 0;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #d98c2b;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+
+  transition: 0.25s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* effet drôle */
+button:hover {
+  background: #b96d14;
+  transform: scale(1.03) rotate(1deg);
+}
+
+/* liens */
+a {
+  color: #8b4513;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* petit message fun */
+.fun-text {
+  margin-top: 15px;
+  color: #7a4d22;
+  font-style: italic;
+}
